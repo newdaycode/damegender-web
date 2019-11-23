@@ -42,6 +42,9 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#motivation">Motivation</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#documentation">Documentation</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#video">V&iacute;deo</a>
           </li>
           <!-- <li class="nav-item mx-0 mx-lg-1"> -->
@@ -176,6 +179,9 @@
     </div>
   </section>
 
+
+
+
   <!-- Installation Section -->
   <section class="page-section bg-primary text-white mb-0" id="installation">
     <div class="container">
@@ -246,11 +252,52 @@
     </div>
   </section>
 
+  <!-- Documentation Section -->
+  <section class="page-section bg-primary text-white mb-0" id="documentation">
+    <div class="container">
+
+      <!-- Documentation Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Documentation</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Documentation Section Content -->
+
+      <!-- Documentation Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="https://github.com/davidam/damegender/raw/master/articles/damegender-brief.pdf">
+          <i class="fas fa-download mr-2"></i>
+          <b>Article presented in MadSeSe (Brief)</b>
+        </a>
+        <a class="btn btn-xl btn-outline-light" href="https://github.com/davidam/damegender/blob/master/articles/bibtex.bib">
+          <i class="fas fa-download mr-2"></i>
+          <b>Bibtex: .bib</b>
+        </a>
+        <a class="btn btn-xl btn-outline-light" href="https://github.com/davidam/damegender/blob/master/README.org">
+          <i class="fas fa-download mr-2"></i>
+          <b>README Tutorial</b>
+        </a>
+        <a class="btn btn-xl btn-outline-light" href="https://github.com/davidam/damegender/blob/master/slides/poster/damegender.pdf">
+          <i class="fas fa-download mr-2"></i>
+          <b>P&oacute;ster</b>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Video Section -->
-  <section class="page-section bg-primary text-white mb-0" id="video">
+  <section class="page-section video" id="video">
     <div class="container">
       <!-- Video Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">V&iacute;deo</h2>
+      <h2 class="page-section-heading text-center text-uppercase">V&iacute;deo</h2>
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
@@ -267,6 +314,46 @@
       </div>
     </div>
   </section>
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Motivation</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/pipy.svg" alt="">
+                <!-- Portfolio Modal - Text -->
+                <pre>$ pip3 install damegender[all]</pre>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio -->
 
 
   <!-- Footer -->
@@ -444,6 +531,47 @@
       </div>
     </div>
   </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Installation</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/pipy.svg" alt="">
+                <!-- Portfolio Modal - Text -->
+                <pre>Brief about Damegender</pre>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio -->
+
 
   <!-- Portfolio Modal 4 -->
   <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
