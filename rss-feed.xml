@@ -1,0 +1,116 @@
+<rss version="1.5">
+  <channel>
+    <title>Damegender</title>
+    <link>http://www.damegender.net</link>
+    <description>Damegender: Gender Gap - Gender Detection from the Name</description>
+    <language>en-en</language>
+    
+    <item>
+      <title>v0.0.36</title>
+      <description>
+	First version packaged.
+	+ The application is supporting test with nose
+	+ main.py is returning names in english and spanish
+	+ api2gender.py is for return names from main apis
+	+ confusion.py is giving support for main apis
+	+ accuracy.py is giving support for main apis
+	+ errors.py is giving support for genderize, damegender, genderguesser and nameapi
+	+ apikeyadd.py allows create a password file for apis
+	+ csv2gender.py is only for partial.csv and all.csv
+	+ damemodels.py is creating sav files for machine learning algorithms with scikit
+	+ gendergoogle.py is a prototype to calculate gender from google results with a name
+	+ git2gender.py is a prototype to return number of males and females in a git repository
+	+ mail2gender.py is a prototype to return number of males and females in a mailing list
+	+ infofeatures.py is related to last_letter_a, last_letter_consonant, last_letter_vocal
+	+ pca support is only a prototype
+      </description>
+        <guid>https://pypi.org/project/damegender/0.0.36/</guid>
+        <link>https://pypi.org/project/damegender/0.0.36/</link>
+        <pubDate>2019-03-21</pubDate>
+    </item>
+
+    <item>
+      <title>v0.1.9</title>
+      <description>
+	+ Improved the test system with testing from python commands with bash.
+	+ Added nameincountries.py to guess a name in different countries
+	+ main.py: added bernoulliNB ML algorithm and support to genderguesser
+	+ confusion.py: adding support to different dimensions
+	+ accuracy.py: added bernoulliNB ML algorithm
+	+ errors.py: adding genderapi and namsor support
+	+ csv2gender.py: Minor chances
+	+ rewriting damemodels.py to postinstall.py to recreate all files created with scripts from original files (not only ML models)
+	+ mail2gender.py: small fix, avoid duplicated
+	+ infofeatures.py: is related to letter_a, last_letter_a, last_letter_o, last_letter_consonant, last_letter_vocal, first_letter, first_letter_consonant, first_letter_vocal
+	+ pca support with pca-components.py and pca-features.py
+      </description>
+        <guid>https://pypi.org/project/damegender/0.1.9/</guid>
+        <link>https://pypi.org/project/damegender/0.1.9/</link>
+        <pubDate>2019-07-05</pubDate>
+    </item>
+
+    <item>
+      <title>v0.2.1</title>
+      <description>
+	+ Added downloadjson.py to download names from csv to one json
+	file we have rewrited accuracy.py, confusion.py and errors.py
+	to make this calculus offline
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.1/</guid>
+      <link>https://pypi.org/project/damegender/0.2.1/</link>
+      <pubDate>2020-01-16</pubDate>
+    </item>
+
+    <item>
+      <title>v0.2.3</title>
+      <description>
+	+ Added damegender2json.py to generate files with ML results.
+	+ Created ML json files
+	+ Added new ML algorithms: tree and mlp (neural network)
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.3/</guid>
+      <link>https://pypi.org/project/damegender/0.2.3/</link>
+      <pubDate>2020-02-07</pubDate>
+    </item>
+
+    <item>
+      <title>v0.2.4</title>
+      <description>
+	Now the next datasets available from main.py in damegender
+	+ [X] United Kingdom
+	+ [X] United States of America
+	+ [X] Uruguay
+	+ [X] Lucía Santamaría and Helena
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.4/</guid>
+      <link>https://pypi.org/project/damegender/0.2.4/</link>
+      <pubDate>2020-02-17</pubDate>
+    </item>
+
+    <item>
+      <title>v0.2.5</title>
+      <description>
+	+ Recreated all datamodels with new datasets. Augmented the accuracies with this feature!
+	+ Namsor stuff has been updated to Namsor2
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.5/</guid>
+      <link>https://pypi.org/project/damegender/0.2.5/</link>
+      <pubDate>2020-03-26</pubDate>
+    </item>
+
+    <item>
+      <title>v0.2.6</title>
+      <description>
+	+ roc.py: to deploy roc curves to measure ML
+	+ regenerate-ml-json.sh: execute all options of damegender2json.py to generate all json needed
+	+ logs-accuracies.sh: execute all options of accuracy.py to generate all logs needed
+	+ logs-confusion.sh: execute all options of confusion.py to generate all logs needed
+	+ api2gender.py: starting the option to use wikidata
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.6rc3/</guid>
+      <link>https://pypi.org/project/damegender/0.2.6rc3/</link>
+      <pubDate>2020-03-26</pubDate>
+    </item>
+
+  </channel>
+</rss>
