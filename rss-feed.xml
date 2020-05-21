@@ -143,5 +143,26 @@
       <pubDate>2020-04-26</pubDate>
     </item>
     
+    <item>
+      <title>v0.2.8</title>
+      <description>
+	<ul>
+	  <li>Canada (107339 names)</li> 
+	  <li>New Zealand (6600 names)</li>
+	  <li>Australia (52978 names)</li>
+	  <li>Portugal (3999 names)</li>
+	  <li>logs-errors.sh: execute allnoundefined.csv with different ML models of errors.py to generate all logs needed</li>
+	  <li>errors.py: refactorize source</li>
+	  <li>articles/damegender.pdf: updating</li>
+	  <li>files/datamodels/*sav: updtating</li>
+	  <li>manual/damegender.pdf: creating manual</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.8/</guid>
+      <link>https://pypi.org/project/damegender/0.2.8/</link>
+      <pubDate>2020-04-26</pubDate>
+    </item>
+
+    
   </channel>
 </rss>
