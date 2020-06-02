@@ -182,7 +182,22 @@
       <link>https://groups.google.com/forum/#!forum/damegender</link>
       <pubDate>2020-04-26</pubDate>
     </item>
-    
+
+    <item>
+      <title>v0.2.9</title>
+      <description>
+	<ul>
+	  <li>Ireland (382 names)</li> 
+	  <li>Iceland (326 names)</li>
+	  <li>Finland (11449 names)</li>
+	  <li>manual/damegender.*: some advances</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.9/</guid>
+      <link>https://pypi.org/project/damegender/0.2.9/</link>
+      <pubDate>2020-06-02</pubDate>
+    </item>
+
     
   </channel>
 </rss>
