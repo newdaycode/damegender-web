@@ -164,26 +164,6 @@
     </item>
 
     <item>
-      <title>Damegender Mailing List is created</title>
-      <description>
-	<p>I am happy to announce the creation of the Damegender mailing list. You can:</p>
-	<ul>
-	  <li>To make questions and answers about Damegender, count males and females in Internet and the gender gap in general in a positive and collaborative way with Damegender and respecting the human rights.</li>
-	  <li>To read mails from another people.</li>
-	  <li>To propose bussiness models with the tool.</li>
-	</ul>
-	<p>You can't:</p>
-	<ul>
-	  <li>To use this mailing list with another objectives if you are using the mailing list against the people who is using this mailing list or against Damegender or values that Damegender is defending (equality in gender gap, to develop free software, human rights in general).</li>
-	</ul>
-	<p>If the administrator detect that you are doing forbid actions you can be rejected from the mailing list.xs</p>
-      </description>
-      <guid>https://groups.google.com/forum/#!forum/damegender</guid>
-      <link>https://groups.google.com/forum/#!forum/damegender</link>
-      <pubDate>2020-04-26</pubDate>
-    </item>
-
-    <item>
       <title>v0.2.9</title>
       <description>
 	<ul>
@@ -198,6 +178,19 @@
       <pubDate>2020-06-02</pubDate>
     </item>
 
+
+    <item>
+      <title>v0.2.9</title>
+      <description>
+	<ul>
+	  <li>top.py: print lists about the most used names in different countries</li>
+	  <li>count-scientifics.py: counting scientifics in Spain</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.10/</guid>
+      <link>https://pypi.org/project/damegender/0.2.10/</link>
+      <pubDate>2020-06-02</pubDate>      
+    </item>
     
   </channel>
 </rss>
