@@ -180,7 +180,7 @@
 
 
     <item>
-      <title>v0.2.9</title>
+      <title>v0.2.10</title>
       <description>
 	<ul>
 	  <li>top.py: print lists about the most used names in different countries</li>
@@ -190,6 +190,26 @@
       <guid>https://pypi.org/project/damegender/0.2.10/</guid>
       <link>https://pypi.org/project/damegender/0.2.10/</link>
       <pubDate>2020-06-02</pubDate>      
+    </item>
+
+    <item>
+      <title>v0.2.11</title>
+      <description>
+	<ul>
+	  <li>count-debian-gender.py: Debian Project (https://www.debian.org)</li>
+	  <li>count-forbes.py: Forbes list about most richest people (https://www.forbes.com/)</li>
+	  <li>count-gnu.py: GNU Project (https://www.gnu.org)</li>
+	  <li>count-kernel.py: Kernel Project (https://www.kernel.org/)</li>
+	  <li>count-scientifics.py: Scientifics in Spain (https://www.webometrics.info/en/GoogleScholar/Spain)</li>
+	  <li>csv2gender.py: improved for any dataset, not only the Lucia and Helena dataset.</li>
+	  <li>git2gender.py: we have fixed a lot of bugs</li>
+	  <li>surname.py: we have added --spanish_provinces using top 50 surnames per province datasets</li>
+	  <li>divide testsbycommandsextranet in testsbycommandsperceval and testsbycommandsextraapis</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.2.11/</guid>
+      <link>https://pypi.org/project/damegender/0.2.11/</link>
+      <pubDate>2020-07-03</pubDate>            
     </item>
     
   </channel>
