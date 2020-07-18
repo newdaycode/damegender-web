@@ -37,5 +37,5 @@ var sentences = [
 
 var size = sentences.length
 var x = Math.floor(size*Math.random())
-alert(sentences[x])
+
 document.getElementById('sentence').innerHTML=sentences[x];
