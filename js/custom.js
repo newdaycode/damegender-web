@@ -11,6 +11,31 @@ var description = [
     "img/logos/xfiles.png"    
 ];
 
+
 var size = description.length
 var x = Math.floor(size*Math.random())
 document.getElementById('logo').src=description[x];
+
+var sentences = [
+    "In the Free Software all people are males, Teresa",
+    "Down with the patriarchy that is going to fall, that is going to fall, above the feminism that is going to win, that is going to win.",
+    "The Forbes people must be gays, Teresa, they are men generally.",
+    "Fundamento is name of female in Spain, Teresa",
+    "Damegender seems the Lucia y el Sexo, spanish film, Teresa",
+    "Isa has a problem similar to Andrea, you don't know if it's male or female, easily, Teresa",
+    "Teresa says that the usa people must no divide the names by races, it must be done by nations.",
+    "Dame is about David Arroyo Menéndez and he is a male, Teresa, you know.",
+    "Teresa, do you think that Inés means in Spain? In-ES? Make sense?",
+    "INE thinks in INE terms and it runs perfect Teresa, perfect, you know.",
+    "Mary is the name most used in United States of America, Teresa.",
+    "Teresa, Margaret is in the top, too.",
+    "Koro is a basque name about a female, I like it, Teresa.",
+    "I like the female with last letter 'a' are feminines, Teresa.",
+    "In United States of America, there 1898 people using Abril and 1329 using April. So curious, Teresa.",
+    "Teresa says the computer people has not ethical values."
+]
+
+var size = sentences.length
+var x = Math.floor(size*Math.random())
+alert(sentences[x])
+document.getElementById('sentence').innerHTML=sentences[x];
