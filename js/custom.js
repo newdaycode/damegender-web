@@ -29,7 +29,6 @@ var sentences = [
     "INE thinks in INE terms and it runs perfect Teresa, perfect, you know.",
     "Mary is the name most used in United States of America, Teresa.",
     "Teresa, Margaret is in the top, too.",
-    "Koro is a basque name about a female, I like it, Teresa.",
     "I like the female with last letter 'a' are feminines, Teresa.",
     "In United States of America, there 1898 people using Abril and 1329 using April. So curious, Teresa.",
     "Teresa says the computer people has not ethical values."
