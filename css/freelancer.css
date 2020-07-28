@@ -6205,7 +6205,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: green;
+  background-color: blue;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9846,4 +9846,14 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+#newtab-search-icon {
+    border: 1px transparent;
+    padding: 0;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    background: url("img/search-indicator-magnifying-glass.svg") center center no-repeat;
+    position: absolute;
 }
