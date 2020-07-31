@@ -28,7 +28,7 @@ var sentences = [
     "Fundamento is name of female in Spain, Teresa",
     "Damegender seems the Lucia y el Sexo, spanish film, Teresa",
     "Isa has a problem similar to Andrea, you don't know if it's male or female, easily, Teresa",
-    "Teresa says that the usa people must no divide the names by races, it must be done by nations.",
+    "Teresa says that the usa people must not divided the names by races, it must be done by nations.",
     "Dame is about David Arroyo Menéndez and he is a male, Teresa, you know.",
     "Teresa, do you think that Inés means in Spain? In-ES? Make sense?",
     "INE thinks in INE terms and it runs perfect Teresa, perfect, you know.",
