@@ -8,7 +8,12 @@ var description = [
     "img/logos/adaneva.jpg",
     "img/logos/illuminati.png",
     "img/logos/stolen_kiss.jpg",
-    "img/logos/xfiles.png"    
+    "img/logos/xfiles.png",
+    "img/logos/Edith_Clarke.jpg",
+    "img/logos/Hedy_Lamarr.jpg",
+    "img/logos/Karen_Sparck.jpg",
+    "img/logos/Margaret_Hamilton_1995.jpg",
+    "img/logos/Angela_Ruiz_Robles.jpg"
 ];
 
 
