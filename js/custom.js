@@ -1,6 +1,7 @@
 
 var description = [
     "img/logos/1024px-Caravaggio_-_Medusa_-_Google_Art_Project.jpg",
+    "img/logos/The_Kiss_Klimt_Google_Cultural_Institute.jpg",
     "img/logos/800px-Bartolomé_Esteban_Perez_Murillo_014.jpg",
     "img/logos/800px-Igualtat_de_sexes.svg.png",
     "img/logos/Ada_Lovelace.jpg",    
