@@ -13,6 +13,8 @@ var description = [
     "img/logos/Hedy_Lamarr.jpg",
     "img/logos/Karen_Sparck.jpg",
     "img/logos/Margaret_Hamilton_1995.jpg",
+    "img/logos/RozsaPeter.jpg",
+    "img/logos/Shirley_Ann_Jackson.jpg",
     "img/logos/Angela_Ruiz_Robles.jpg"
 ];
 
