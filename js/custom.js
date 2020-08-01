@@ -41,7 +41,7 @@ var sentences = [
     "In United States of America, there 1898 people using Abril and 1329 using April. So curious, Teresa.",
     "Teresa says the computer people has not ethical values.",
     "David feels the same ira against the woman idea about the apples than RMS"
-    
+    "David feels than Python won to the rest of scripting languages, such as Gregorio and Jesus"
 ]
 
 var size = sentences.length
