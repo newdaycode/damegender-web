@@ -39,7 +39,9 @@ var sentences = [
     "Teresa, Margaret is in the top, too.",
     "I like the female with last letter 'a' are feminines, Teresa.",
     "In United States of America, there 1898 people using Abril and 1329 using April. So curious, Teresa.",
-    "Teresa says the computer people has not ethical values."
+    "Teresa says the computer people has not ethical values.",
+    "David feels the same ira against the woman idea about the apples than RMS"
+    
 ]
 
 var size = sentences.length
