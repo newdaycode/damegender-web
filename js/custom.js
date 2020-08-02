@@ -17,6 +17,7 @@ var logos = [
     "img/logos/RozsaPeter.jpg",
     "img/logos/Shirley_Ann_Jackson.jpg",
     "img/logos/Angela_Ruiz_Robles.jpg",
+    "img/logos/davidam.jpg",    
 ];
 
 var size = logos.length;
