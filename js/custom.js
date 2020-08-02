@@ -1,5 +1,5 @@
 
-var description = [
+var logos = [
     "img/logos/1024px-Caravaggio_-_Medusa_-_Google_Art_Project.jpg",
     "img/logos/The_Kiss_Klimt_Google_Cultural_Institute.jpg",
     "img/logos/800px-Bartolomé_Esteban_Perez_Murillo_014.jpg",
@@ -16,15 +16,14 @@ var description = [
     "img/logos/Margaret_Hamilton_1995.jpg",
     "img/logos/RozsaPeter.jpg",
     "img/logos/Shirley_Ann_Jackson.jpg",
-    "img/logos/Angela_Ruiz_Robles.jpg"
+    "img/logos/Angela_Ruiz_Robles.jpg",
 ];
 
+var size = logos.length;
+var x = Math.floor(size*Math.random());
+document.getElementById('logo').src=logos[x];
 
-var size = description.length
-var x = Math.floor(size*Math.random())
-document.getElementById('logo').src=description[x];
-
-var sentences = [
+ var sentences = [
     "In the Free Software all people are males, Teresa",
     "Down with the patriarchy that is going to fall, that is going to fall, above the feminism that is going to win, that is going to win.",
     "The Forbes people must be gays, Teresa, they are men generally.",
@@ -40,8 +39,7 @@ var sentences = [
     "I like the female with last letter 'a' are feminines, Teresa.",
     "In United States of America, there 1898 people using Abril and 1329 using April. So curious, Teresa.",
     "Teresa says the computer people has not ethical values.",
-    "David feels the same ira against the woman idea about the apples than RMS"
-    "David feels than Python won to the rest of scripting languages, such as Gregorio and Jesus"
+    "David feels than Python won to the rest of scripting languages, such as Gregorio and Jesus",
 ]
 
 var size = sentences.length
