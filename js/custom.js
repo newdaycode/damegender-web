@@ -17,14 +17,16 @@ var logos = [
     "img/logos/RozsaPeter.jpg",
     "img/logos/Shirley_Ann_Jackson.jpg",
     "img/logos/Angela_Ruiz_Robles.jpg",
-    "img/logos/davidam.jpg",    
+    "img/logos/davidam.jpg",
+    "img/logos/debianwomen-bcn-2014.jpg",
+    "img/logos/jakob_and_elizabeth.jpg",
 ];
 
 var size = logos.length;
 var x = Math.floor(size*Math.random());
 document.getElementById('logo').src=logos[x];
 
- var sentences = [
+var sentences = [
     "In the Free Software all people are males, Teresa",
     "Down with the patriarchy that is going to fall, that is going to fall, above the feminism that is going to win, that is going to win.",
     "The Forbes people must be gays, Teresa, they are men generally.",
