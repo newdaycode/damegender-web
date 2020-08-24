@@ -18,6 +18,7 @@ var logos = [
     "img/logos/Shirley_Ann_Jackson.jpg",
     "img/logos/Angela_Ruiz_Robles.jpg",
     "img/logos/davidam.jpg",
+    "img/logos/juanmartin.jpg",    
     "img/logos/gender.png",    
     "img/logos/debianwomen-bcn-2014.jpg",
     "img/logos/jakob_and_elizabeth.jpg",
