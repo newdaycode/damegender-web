@@ -7,7 +7,6 @@ var logos = [
     "img/logos/Ada_Lovelace.jpg",    
     "img/logos/Grace_Murray_Hopper.jpg",
     "img/logos/adaneva.jpg",
-    "img/logos/illuminati.png",
     "img/logos/stolen_kiss.jpg",
     "img/logos/xfiles.png",
     "img/logos/Edith_Clarke.jpg",
