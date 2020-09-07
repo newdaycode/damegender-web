@@ -45,10 +45,6 @@ var sentences = [
     "Teresa says the computer people has not ethical values.",
     "David feels than Python won to the rest of scripting languages, such as Gregorio and Jesus",
     "Who is worst? Who is exploiting my labor force or who is violating my body? A violator could be your killer because he is afraid by the law, with the labor exploitation you are useful for this person because you are his slave. Conclusion don't allow labor explotation by violators.",
-    "Teresa, algunos graciosos del Open Source siempre le decían a David que el Emacs para el C o sino que use VI y ahora que estamos todas con las mascarillas ya no sé que pensar",
-    "Teresa, David solía decirme no quiero con Pilar, porque yo interpreto, pero no sé si piensa igual ahora", 
-    "Inés, yo creo que a David sí le gusta intepretar con Python y Bash lo de INE.es",
-    "Teresa, a mí me dijo que lo de Emacs es para toda la vida",
 ]
 
 var size = sentences.length
