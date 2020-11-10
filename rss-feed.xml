@@ -211,6 +211,20 @@
       <link>https://pypi.org/project/damegender/0.2.11/</link>
       <pubDate>2020-07-03</pubDate>            
     </item>
-    
+
+    <item>
+      <title>v0.3.1</title>
+      <description>
+	<ul>
+	  <li>top.py: add --position argument, fix --less</li>
+	  <li>mail2gender.py and git2gender.py: it shows males and females</li>
+	  <li>app/dame_statistics.py: created due to refactor in app/dame_gender.py</li>
+	  <li>csv2gender.py: add --noshow argument</li>
+	  <li>jokes.py: created. It's about damegender tips written as jokes.</li>
+	  <li>manual: new sections</li>
+	  <li>Now we have a dual license and I add scripts to change licenses</li>
+	</ul>
+      </description>
+    </item>
   </channel>
 </rss>
