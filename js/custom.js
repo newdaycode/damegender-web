@@ -21,6 +21,7 @@ var logos = [
     "img/logos/gender.png",    
     "img/logos/debianwomen-bcn-2014.jpg",
     "img/logos/jakob_and_elizabeth.jpg",
+    "img/logos/heteropython.png",    
 ];
 
 var size = logos.length;
