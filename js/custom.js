@@ -46,7 +46,7 @@ var sentences = [
     "Teresa says the computer people has not ethical values.",
     "David feels than Python won to the rest of scripting languages, such as Gregorio and Jesus",
     "Who is worst? Who is exploiting my labor force or who is violating my body? A violator could be your killer because he is afraid by the law, with the labor exploitation you are useful for this person because you are his slave. Conclusion don't allow labor explotation by violators.",
-    "Lucía, you are becoming COattacker against DaVID with Microsoft and you are in the position 19 in the females list of INE.es. Take care with Grupo de Amigos Linux they are sad by the death of Ian Murdock",
+    "Lucía, you are becoming the Microsoft's COattacker against DaVID  and you are in the position 19 in the females list of INE.es. Take care with Grupo de Amigos Linux they are sad by the death of Ian Murdock",
 ]
 
 var size = sentences.length
