@@ -22,7 +22,8 @@ var logos = [
     "img/logos/debianwomen-bcn-2014.jpg",
     "img/logos/jakob_and_elizabeth.jpg",
     "img/logos/heteropython.png",    
-    "img/logos/Marie_Curie.jpg",    
+    "img/logos/Marie_Curie.jpg",
+    "img/logos/Irene_Montero_2020.jpg",
 ];
 
 var size = logos.length;
