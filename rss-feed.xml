@@ -226,5 +226,43 @@
 	</ul>
       </description>
     </item>
+    
+    <item>
+      <title>v0.3.2</title>
+      <description>
+	<ul>
+	  <li>csv2gender.py: add --verbose argument</li>
+	</ul>
+	<p>New names from official statistics:</p>
+	<ul>
+	  <li>Belgium (14208 names)</li>
+	  <li>Slovenia (8788 names)</li>
+	  <li>Austria (1899 names)</li>
+	  <li>Deutchsland (22368 names)</li>
+	  <li>Mexico (16122 names)</li>
+	</ul>
+      </description>
+    </item>
+
+    <item>
+      <title>v0.3.3</title>
+      <description>
+	<ul>
+	  <li>csv2gender.py: adding new argument</li>
+	</ul>
+	<p>Creating inter names from all countries with Open Data:</p>
+	<ul>
+	  <li>259395 males</li>
+	  <li>279863 females</li>
+	</ul>
+	<p>New names from official Open Data statisticis</p>
+	<ul>
+	  <li>Denmark (62072 males and 79235 females)</li>
+	  <li>France (16660 males and 19783 females)</li>
+	</ul>
+      </description>
+    </item>
+
+    
   </channel>
 </rss>
