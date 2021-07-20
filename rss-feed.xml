@@ -262,7 +262,35 @@
 	</ul>
       </description>
     </item>
+    
+    <item>
+      <title>v0.3.4</title>
+      <description>
+	<p>New names:</p>
+	<ul>
+	  <li>China (2614 females and 2614 males)</li>
+	  <li>Turkey (116114 females and 67309 males)</li>
+	</ul>
+	<p>New commands:</p>
+	<ul>
+	  <li>mergeinterfiles.py: merge dataset files</li>
+	</ul>
+      </description>
+    </item>
 
+    <item>
+      <title>v0.3.5</title>
+      <description>
+	<p>Refactoring and bug fixing: All source is reaching PEP8 coding style
+	now.</p>
+	<p>Improvements in commands:</p>
+	<p>api2gender.py: you can scrap the gender from wikipedia with
+  --api=wikipedia. Before, you can use --api=wikidata, but this way
+  (sparql) is worst in the current state of the development.</p>
+      </description>
+    </item>
+
+    
     <item>
       <title>New Preprint and Video</title>
       <description>
