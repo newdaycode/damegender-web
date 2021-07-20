@@ -225,6 +225,9 @@
 	  <li>Now we have a dual license and I add scripts to change licenses</li>
 	</ul>
       </description>
+      <guid>https://pypi.org/project/damegender/0.3.1.post4/</guid>
+      <link>https://pypi.org/project/damegender/0.3.1.post4/</link>
+      <pubDate>2020-11-14</pubDate>                  
     </item>
     
     <item>
@@ -242,6 +245,9 @@
 	  <li>Mexico (16122 names)</li>
 	</ul>
       </description>
+      <guid>https://pypi.org/project/damegender/0.3.2.post6/</guid>
+      <link>https://pypi.org/project/damegender/0.3.2.post6/</link>
+      <pubDate>2020-12-23</pubDate>                        
     </item>
 
     <item>
@@ -261,6 +267,9 @@
 	  <li>France (16660 males and 19783 females)</li>
 	</ul>
       </description>
+      <guid>https://pypi.org/project/damegender/0.3.3.post4/</guid>
+      <link>https://pypi.org/project/damegender/0.3.3.post4/</link>
+      <pubDate>2020-05-04</pubDate>                              
     </item>
     
     <item>
@@ -276,6 +285,9 @@
 	  <li>mergeinterfiles.py: merge dataset files</li>
 	</ul>
       </description>
+      <guid>https://pypi.org/project/damegender/0.3.4/</guid>
+      <link>https://pypi.org/project/damegender/0.3.4/</link>
+      <pubDate>2020-05-10</pubDate>                                    
     </item>
 
     <item>
@@ -288,6 +300,9 @@
   --api=wikipedia. Before, you can use --api=wikidata, but this way
   (sparql) is worst in the current state of the development.</p>
       </description>
+      <guid>https://pypi.org/project/damegender/0.3.5.post1/</guid>
+      <link>https://pypi.org/project/damegender/0.3.5.post1/</link>
+      <pubDate>2020-07-19</pubDate>                                          
     </item>
 
     <item>
