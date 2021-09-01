@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="utf-8">
@@ -87,15 +86,14 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- <form action="" class="navbar-form navbar-right" id="search-form" method="get" role="search"> -->
-      <!--   <div class="form-group"> -->
-      <!-- 	  <div id="newtab-search-icon"></div> -->
-      <!--     <input class="form-control" name="q" placeholder="Search" size="50em" type="text"> -->
-      <!-- 	  <p id="sex"></p> -->
-      <!--   </div> -->
-      <!-- </form>       -->
+      <form action="javascript:void();">
+	<div>
+	  <input type="text">
+	  <input type="submit" value="Search">
+	</div>
+      </form>
 
-      
+      <div id="names"></div>
       <!-- Masthead Subheading -->
       <p class="masthead-subheading font-weight-light mb-0">Gender Gap - Gender Detection from the Name - Count males and females in Internet communities</p>
       <p class="masthead-subheading font-weight-light mb-0 black">The truth is in the Free Data - The truth is in the Free Source</p>
@@ -765,6 +763,26 @@
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
 
+  <script>
+    $("form").submit(function( event ) {
+	$.getJSON("https://damegender.davidam.com/names/es/"+ $( "input" ).first().val().toUpperCase() +"_female.json", function(result){
+	    $("#names").append('<p>' + result[0].name + '</p>');
+	    $("#names").append('<p>' + result[0].frequency + '</p>');
+	    $("#names").append('<p>' + result[0].gender + '</p>');
+	    $("#names").append('<p>spanish dataset</p>');        	    
+	});
+	$.getJSON("https://damegender.davidam.com/names/es/"+ $( "input" ).first().val().toUpperCase() +"_male.json", function(result){
+	    $("#names").append('<p>' + result[0].name + '</p>');
+	    $("#names").append('<p>' + result[0].frequency + '</p>');
+	    $("#names").append('<p>' + result[0].gender + '</p>');
+	    $("#names").append('<p>spanish dataset</p>');        	    	    
+	});
+	$("#names").css("background-color", "#EDEDF0").slideUp(2000).slideDown(2000);
+	$("#names").css("padding", "10em").slideUp(2000).slideDown(2000);	
+	event.preventDefault();
+    });
+  </script>
+  
 </body>
 
 </html>
