@@ -765,6 +765,7 @@
 
   <script>
     $("form").submit(function( event ) {
+	$("#names").html("");
 	$.getJSON("https://damegender.davidam.com/names/es/"+ $( "input" ).first().val().toUpperCase() +"_female.json", function(result){
 	    $("#names").append('<p>' + result[0].name + '</p>');
 	    $("#names").append('<p>' + result[0].frequency + '</p>');
@@ -777,8 +778,8 @@
 	    $("#names").append('<p>' + result[0].gender + '</p>');
 	    $("#names").append('<p>spanish dataset</p>');        	    	    
 	});
-	$("#names").css("background-color", "#EDEDF0").slideUp(2000).slideDown(2000);
-	$("#names").css("padding", "10em").slideUp(2000).slideDown(2000);	
+	$("#names").css("background-color", "#EDEDF0").slideDown(2000);
+	$("#names").css("padding", "5em").slideDown(2000);	
 	event.preventDefault();
     });
   </script>
