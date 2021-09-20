@@ -766,17 +766,12 @@
   <script>
     $("form").submit(function( event ) {
 	$("#names").html("");
-	$.getJSON("https://damegender.davidam.com/names/es/"+ $( "input" ).first().val().toUpperCase() +"_female.json", function(result){
+	$.getJSON("https://damegender.davidam.com/names/inter/"+ $( "input" ).first().val().toUpperCase() +"_all.json", function(result){
 	    $("#names").append('<p>' + result[0].name + '</p>');
-	    $("#names").append('<p>' + result[0].frequency + '</p>');
-	    $("#names").append('<p>' + result[0].gender + '</p>');
-	    $("#names").append('<p>spanish dataset</p>');        	    
-	});
-	$.getJSON("https://damegender.davidam.com/names/es/"+ $( "input" ).first().val().toUpperCase() +"_male.json", function(result){
-	    $("#names").append('<p>' + result[0].name + '</p>');
-	    $("#names").append('<p>' + result[0].frequency + '</p>');
-	    $("#names").append('<p>' + result[0].gender + '</p>');
-	    $("#names").append('<p>spanish dataset</p>');        	    	    
+	    $("#names").append('<p>frequency: ' + result[0].frequency + '</p>');	    
+	    $("#names").append('<p>males: ' + result[0].males + '</p>');
+	    $("#names").append('<p>females: ' + result[0].females + '</p>');
+	    $("#names").append('<p>international dataset</p>');        	    
 	});
 	$("#names").css("background-color", "#EDEDF0").slideDown(2000);
 	$("#names").css("padding", "5em").slideDown(2000);	
