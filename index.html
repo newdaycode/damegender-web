@@ -766,9 +766,11 @@
   <script>
     $("form").submit(function( event ) {
 	$("#names").html("");
-	$.getJSON("https://damegender.davidam.com/names/inter/"+ $( "input" ).first().val().toUpperCase() +"_all.json", function(result){
+	var str = $("input").val().toUpperCase();
+	str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+	$.getJSON("https://damegender.davidam.com/names/inter/"+ str +"_all.json", function(result){
 	    $("#names").append('<p>' + result[0].name + '</p>');
-	    $("#names").append('<p>frequency: ' + result[0].frequency + '</p>');	    
+	    $("#names").append('<p>frequency: ' + result[0].frequency + '</p>');
 	    $("#names").append('<p>males: ' + result[0].males + '</p>');
 	    $("#names").append('<p>females: ' + result[0].females + '</p>');
 	    $("#names").append('<p>international dataset</p>');        	    
