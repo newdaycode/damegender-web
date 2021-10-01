@@ -319,6 +319,29 @@
       <link>https://easychair.org/publications/preprint/sBZV</link>
       <pubDate>2021-06-10</pubDate>                                                
     </item>
+
+    <item>
+      <title>New Search Engine</title>
+      <description>
+	<p>You can enjoy api restful power with a search engine in the
+	website</p>
+      </description>
+      <guid>https://damegender.davidam.com</guid>
+      <link>https://damegender.davidam.com</link>
+      <pubDate>2021-09-31</pubDate>                                                
+    </item>
+    
+    <item>
+      <title>v0.3.6</title>
+      <description>
+	<p>New command: csv2jsonapirest.py to download names with json api files</p>
+	<p>New country: Switzerland (60693 names)</p>
+	<p>Updates in commands about datasets.</p>	
+      </description>
+      <guid>https://pypi.org/project/damegender/0.3.6/</guid>
+      <link>https://pypi.org/project/damegender/0.3.6/</link>
+      <pubDate>2021-10-01</pubDate>                                          
+    </item>
     
   </channel>
 </rss>
