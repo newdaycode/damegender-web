@@ -31,3 +31,24 @@ var x = Math.floor(size*Math.random());
 document.getElementById('logo').src=logos[x];
 
 
+$('.btn-free-software').click(function() {
+    $('.free-software-content').show();
+});
+
+$('.btn-debian').click(function() {
+    $('.debian').show();
+    $('.gnu').hide();
+    $('.kernel').hide();      
+});
+
+$('.btn-gnu').click(function() {
+    $('.debian').hide();
+    $('.gnu').show();
+    $('.kernel').hide();      
+});
+$('.btn-kernel').click(function() {
+    $('.debian').hide();
+    $('.gnu').hide();
+    $('.kernel').show();
+});
+
