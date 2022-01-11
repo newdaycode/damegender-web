@@ -32,7 +32,8 @@ document.getElementById('logo').src=logos[x];
 
 
 $('.btn-free-software').click(function() {
-    $('.free-software-content').show();
+    $('.free-software').show();
+    $('.most-used-names').hide();    
 });
 
 $('.btn-debian').click(function() {
@@ -52,3 +53,8 @@ $('.btn-kernel').click(function() {
     $('.kernel').show();
 });
 
+$('.btn-most-used-names').click(function() {
+    $('.most-used-names').show();
+    $('.free-software').hide();
+    $('.free-software-content').hide();    
+});
