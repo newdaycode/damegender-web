@@ -342,6 +342,59 @@
       <link>https://pypi.org/project/damegender/0.3.6/</link>
       <pubDate>2021-10-01</pubDate>                                          
     </item>
+
+    <item>
+      <title>v0.3.7</title>
+      <description>
+	<p>New country: Sweden (1079 males and 974 females)</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.3.7/</guid>
+      <link>https://pypi.org/project/damegender/0.3.7/</link>
+      <pubDate>2021-10-04</pubDate>                             
+    </item>
+
+    <item>
+      <title>v0.3.8</title>
+      <description>
+	<p>New country: Norway (1015 females 896 males)</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.3.8/</guid>
+      <link>https://pypi.org/project/damegender/0.3.8/</link>
+      <pubDate>2021-10-08</pubDate>                             
+    </item>
+
+    <item>
+      <title>v0.4.0</title>
+      <description>
+	<p>New country: Russia (1434 females and 3357 males)</p>
+	<p>newspaper2gender.py: to guess the author's gender from a newspaper</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.3.8/</guid>
+      <link>https://pypi.org/project/damegender/0.3.8/</link>
+      <pubDate>2021-10-08</pubDate>                             
+    </item>
+
+    <item>
+      <title>v0.4.1</title>
+      <description>
+	<p>Cleaning code: to reach PEP8, removing unused libraries, ...</p>
+	<p>percentage2names.py: to create datasets with a specific range of percentage of males or females</p>
+	<p>launchpad2gender.py: start script to use the perceval feature about launchpad (experimental in Damegender, now)</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.1/</guid>
+      <link>https://pypi.org/project/damegender/0.4.1/</link>
+      <pubDate>2022-02-09</pubDate>     
+    </item>
+
+    <item>
+      <title>v0.4.2</title>
+      <description>
+	<p>Improvements towards reproducible science: scripting, updates in data, ...</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.2/</guid>
+      <link>https://pypi.org/project/damegender/0.4.2/</link>
+      <pubDate>2022-02-28</pubDate>
+    </item>
     
   </channel>
 </rss>
