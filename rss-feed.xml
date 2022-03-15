@@ -395,6 +395,58 @@
       <link>https://pypi.org/project/damegender/0.4.2/</link>
       <pubDate>2022-02-28</pubDate>
     </item>
+
+    <item>
+      <title>v0.4.3</title>
+      <description>
+	<p>New features:
+	<ul>
+	  <li>get-wikidata-names.py: to download names from wikidata in a specific country</li>
+	  <li>get-wikidata-surnames.py: to download surnames from wikidata in a specific country</li>
+	</ul>
+	<p>These wikidata datasets are a subset of datasets retrieved from
+	statistical institutions due to that in Wikipedia/Wikidata there are
+	important people for each country, but you can find it useful if you
+	have not names in a country or if you need a test dataset about names
+	and gender in a country. But you must not trust in the top,
+	frequencies, ...  given by these datasets, there are exploratory data,
+	only.</p>
+
+	<p>Datasets:</p>
+	<ul>
+	  <li>You can access to Russia names in cyrillic alphabet (ru_ru) and
+	  latin alphabet (ru_en)</li>
+	</ul>
+	  
+	<p>Improvements towards reproducible science: scripting,
+	updates in data, ...</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.3/</guid>
+      <link>https://pypi.org/project/damegender/0.4.3/</link>
+      <pubDate>2022-03-05</pubDate>
+    </item>
+
+    <item>
+      <title>v0.4.4</title>
+      <description>
+	<p>Official Datasets:</p>
+	<ul>
+	  <li>[X] Argentina: 42800 names, 24587 females, 18456 males, 77583 surnames</li>
+	  <li>[X] Great Britain: 459848 names, 34326 males, 51195 females</li>
+	</ul>
+	<p>Great Britain has several statistical offices divided by Great Britain regions. So we must do more long calculus if you find bugs, please
+send to Damegender, for example, with a github issue. Thanks in advance.</p>
+
+        <p>Cleaning code:</p>
+	<ul>
+	  <li>[X] Replaced lxml by xml python native, lxml was doing problems in MacOS</li>
+	  <li>[X] Reducing lines of code in top.py</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.4/</guid>
+      <link>https://pypi.org/project/damegender/0.4.4/</link>
+      <pubDate>2022-03-14</pubDate>
+    </item>
     
   </channel>
 </rss>
