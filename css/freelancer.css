@@ -9742,6 +9742,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.gender-equity {
+  margin: 25px;
+}
+
 .portfolio {
   margin-bottom: -30px;
 }
@@ -9847,6 +9851,10 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
 }
 
+.footer-social-icons {
+  border-color: 1px solid white;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -9859,11 +9867,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 #newtab-search-icon {
-    border: 1px transparent;
-    padding: 0;
-    margin: 0;
-    width: 36px;
-    height: 36px;
-    background: url("img/search-indicator-magnifying-glass.svg") center center no-repeat;
-    position: absolute;
+  border: 1px transparent;
+  padding: 0;
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  background: url("img/search-indicator-magnifying-glass.svg") center center no-repeat;
+  position: absolute;
 }
