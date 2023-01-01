@@ -402,16 +402,14 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <div class="text-center">
-	<button type="button" class="btn btn-primary btn-lg btn-free-software">Argentina</button>
-	<button type="button" class="btn btn-secondary btn-lg btn-none">USA</button>
-	<button type="button" class="btn btn-info btn-lg btn-none">Spain</button>
+      <div class="text-center buttons-top">
+	<button type="button" class="btn btn-primary btn-lg btn-none ar">Argentina</button>
+	<button type="button" class="btn btn-secondary btn-lg btn-none es">Spain</button>	
+	<button type="button" class="btn btn-secondary btn-lg btn-none us">USA</button>
       </div>
 
       <div class="container">
-	<div class="row">
-	  <div id="topcontent" class="col-md-3"></div>
-	</div>
+	<div id="topcontent"></div>
       </div>
     </div>
   </section>
@@ -774,10 +772,11 @@
 
   <script>
     $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
-	for (var i = 0; i < 200; i++) {
-	    
-	    $("#top").append('<p>' + result[i].position + ') ' + result[i].name + ':' + result[i].count + '</p>');
+	$("#topcontent").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#top").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
+	$("#topcontent").append('</div>');	
     });
     $("form").submit(function( event ) {
 	$("#names").html("");
