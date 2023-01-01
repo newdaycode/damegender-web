@@ -35,25 +35,28 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#search">Search</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#search">Search</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#apirest">API Rest</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/top.html">Top</a>
+          </li>	  
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#apirest">API</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#installation">Install</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#installation">Install</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#motivation">Motivation</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#motivation">Why</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#documentation">Docs</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#documentation">Docs</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#video">V&iacute;deo</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#video">V&iacute;deo</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#stats">Stats</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://damegender.davidam.com/#stats">Stats</a>
           </li>	  
           <!-- <li class="nav-item mx-0 mx-lg-1"> -->
           <!--   <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://groups.google.com/forum/#!forum/damegender">Mailing List</a> -->
@@ -387,35 +390,8 @@
     </div>
   </section>
 
-  <!-- Most Used Names Section -->
-  <section class="page-section bg-primary text-black mb-1" id="top">
-    <div class="container">
-
-      <!-- Statistics Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names</h2>
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <div class="text-center buttons-top">
-	<button type="button" class="btn btn-primary btn-lg btn-none ar">Argentina</button>
-	<button type="button" class="btn btn-secondary btn-lg btn-none es">Spain</button>	
-	<button type="button" class="btn btn-secondary btn-lg btn-none us">USA</button>
-      </div>
-
-      <div class="container">
-	<div id="topcontent"></div>
-      </div>
-    </div>
-  </section>
-  
   <!-- Statistics Section -->
-  <section class="page-section" id="stats">
+  <section class="page-section bg-primary text-black mb-0" id="stats">
     <div class="container">
 
       <!-- Statistics Section Heading -->
@@ -522,7 +498,6 @@
       </div>
     </div>
   </div>
-  
   <!-- End Portfolio -->
 
 
@@ -771,13 +746,6 @@
   <script src="js/freelancer.min.js"></script>
 
   <script>
-    $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
-	$("#topcontent").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#top").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent").append('</div>');	
-    });
     $("form").submit(function( event ) {
 	$("#names").html("");
 	var str = $("input").val().toUpperCase();

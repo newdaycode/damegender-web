@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <img class="gender-equity" src="img/genderequity.svg" height="70em" alt="Gender Equity. Damegender Logo" />
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">DameGender</a>
+      <a class="navbar-brand js-scroll-trigger" href="https://damegender.davidam.com">DameGender</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-black rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -60,6 +60,9 @@
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#is"><img src="img/flags/is.svg" alt="Iceland" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#no"><img src="img/flags/no.svg" alt="Norway" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#us"><img src="img/flags/us.svg" alt="United States of America" height="15px"/></a>
@@ -293,6 +296,27 @@
     </div>
   </section>
 
+  <!-- Most Common Names Section -->
+  <section class="page-section" id="no">
+    <div class="container">
+
+      <!-- Most Common Names Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Norway</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-no"></div>
+      </div>
+    </div>
+  </section>
+
   
   <!-- Most Common Names Section -->
   <section class="page-section" id="us">
@@ -393,6 +417,7 @@
   <script src="js/freelancer.min.js"></script>
 
   <script>
+    const array1 = ['ar', 'be', 'ca', 'es', 'fi', 'fr', 'gb', 'ie', 'is', 'fi', 'fr', 'gb', 'ie', 'is', 'no'];    
     $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
 	$("#topcontent-ar").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
@@ -401,14 +426,14 @@
 	$("#topcontent-ar").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/beall.json", function(result){
-	$("#topcontent-at").append('<div class="list-group">');
+	$("#topcontent-be").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-be").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-be").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/caall.json", function(result){
-	$("#topcontent-au").append('<div class="list-group">');
+	$("#topcontent-ca").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-ca").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
@@ -436,7 +461,7 @@
 	$("#topcontent-fr").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/gball.json", function(result){
-	$("#topcontent-fr").append('<div class="list-group">');
+	$("#topcontent-gb").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-gb").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
@@ -456,27 +481,19 @@
 	}
 	$("#topcontent-is").append('</div>');	
     });
+    $.getJSON("https://damegender.davidam.com/names/top/noall.json", function(result){
+	$("#topcontent-is").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-no").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-no").append('</div>');	
+    });
     $.getJSON("https://damegender.davidam.com/names/top/usall.json", function(result){
 	$("#topcontent-us").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-us").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-us").append('</div>');	
-    });
-    $("form").submit(function( event ) {
-	$("#names").html("");
-	var str = $("input").val().toUpperCase();
-	str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-	$.getJSON("https://damegender.davidam.com/names/inter/"+ str +"_all.json", function(result){
-	    $("#names").append('<p>' + result[0].name + '</p>');
-	    $("#names").append('<p>frequency: ' + result[0].frequency + '</p>');
-	    $("#names").append('<p>males: ' + result[0].males + '</p>');
-	    $("#names").append('<p>females: ' + result[0].females + '</p>');
-	    $("#names").append('<p>international dataset</p>');        	    
-	});
-	$("#names").css("background-color", "#EDEDF0").slideDown(2000);
-	$("#names").css("padding", "5em").slideDown(2000);	
-	event.preventDefault();
     });
   </script>
   
