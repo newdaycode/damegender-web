@@ -44,6 +44,12 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ca"><img src="img/flags/ca.svg" alt="Canada" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#de"><img src="img/flags/de.svg" alt="Germany" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dk"><img src="img/flags/dk.svg" alt="Denmark" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#es"><img src="img/flags/es.svg" alt="Spain" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -66,6 +72,9 @@
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#us"><img src="img/flags/us.svg" alt="United States of America" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#uy"><img src="img/flags/uy.svg" alt="Uruguay" height="15px"/></a>
           </li>
           <!-- <li class="nav-item mx-0 mx-lg-1"> -->
           <!--   <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://groups.google.com/forum/#!forum/damegender">Mailing List</a> -->
@@ -166,6 +175,46 @@
 
       <div class="container">
 	<div id="topcontent-ca"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="de">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Germany</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-de"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="dk">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Denmark</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-dk"></div>
       </div>
     </div>
   </section>
@@ -338,6 +387,27 @@
       </div>
     </div>
   </section>
+
+  <!-- Most Common Names Section -->
+  <section class="page-section" id="uy">
+    <div class="container">
+
+      <!-- Most Common Names Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Uruguay</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-uy"></div>
+      </div>
+    </div>
+  </section>
   
   
   <!-- End Portfolio -->
@@ -439,6 +509,20 @@
 	}
 	$("#topcontent-ca").append('</div>');	
     });
+    $.getJSON("https://damegender.davidam.com/names/top/deall.json", function(result){
+	$("#topcontent-de").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-de").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-de").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/dkall.json", function(result){
+	$("#topcontent-dk").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-dk").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-dk").append('</div>');	
+    });
     $.getJSON("https://damegender.davidam.com/names/top/esall.json", function(result){
 	$("#topcontent-es").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
@@ -494,6 +578,13 @@
 	    $("#topcontent-us").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-us").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/uyall.json", function(result){
+	$("#topcontent-uy").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-uy").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-uy").append('</div>');	
     });
   </script>
   
