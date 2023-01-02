@@ -74,6 +74,9 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#us"><img src="img/flags/us.svg" alt="United States of America" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#un"><img src="img/flags/un.svg" alt="INTER" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#uy"><img src="img/flags/uy.svg" alt="Uruguay" height="15px"/></a>
           </li>
           <!-- <li class="nav-item mx-0 mx-lg-1"> -->
@@ -389,6 +392,27 @@
   </section>
 
   <!-- Most Common Names Section -->
+  <section class="page-section" id="un">
+    <div class="container">
+
+      <!-- Most Common Names Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Common International Names</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-inter"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Most Common Names Section -->
   <section class="page-section" id="uy">
     <div class="container">
 
@@ -558,6 +582,13 @@
 	}
 	$("#topcontent-ie").append('</div>');	
     });
+    $.getJSON("https://damegender.davidam.com/names/top/interall.json", function(result){
+	$("#topcontent-inter").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-inter").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-inter").append('</div>');	
+    });
     $.getJSON("https://damegender.davidam.com/names/top/isall.json", function(result){
 	$("#topcontent-is").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
@@ -566,7 +597,7 @@
 	$("#topcontent-is").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/noall.json", function(result){
-	$("#topcontent-is").append('<div class="list-group">');
+	$("#topcontent-no").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-no").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
