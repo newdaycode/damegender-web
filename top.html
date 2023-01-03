@@ -80,6 +80,12 @@
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#ru"><img src="img/flags/ru.svg" alt="Rusia" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#se"><img src="img/flags/se.svg" alt="Sweden" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#si"><img src="img/flags/si.svg" alt="Slovenia" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#us"><img src="img/flags/us.svg" alt="United States of America" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -440,6 +446,46 @@
       </div>
     </div>
   </section>
+  <!-- Most Common Names Section -->
+  <section class="page-section" id="se">
+    <div class="container">
+
+      <!-- Most Common Names Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Sweden</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-se"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Common Names Section -->
+  <section class="page-section" id="si">
+    <div class="container">
+
+      <!-- Most Common Names Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Slovenia</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-si"></div>
+      </div>
+    </div>
+  </section>
   
   
   <!-- Most Common Names Section -->
@@ -695,6 +741,20 @@
 	    $("#topcontent-ru").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-ru").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/seall.json", function(result){
+	$("#topcontent-se").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-se").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-se").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/siall.json", function(result){
+	$("#topcontent-si").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-si").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-si").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/usall.json", function(result){
 	$("#topcontent-us").append('<div class="list-group">');
