@@ -38,6 +38,9 @@
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#ar"><img src="img/flags/ar.svg" alt="Argentina" height="15px"/></button></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#au"><img src="img/flags/au.svg" alt="Australia" height="15px"/></button></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#be"><img src="img/flags/be.svg" alt="Belgium" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -152,6 +155,27 @@
 
       <div class="container">
 	<div id="topcontent-ar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="au">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Australia</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-au"></div>
       </div>
     </div>
   </section>
@@ -629,13 +653,20 @@
   <script src="js/freelancer.min.js"></script>
 
   <script>
-    const array1 = ['ar', 'be', 'ca', 'es', 'fi', 'fr', 'gb', 'ie', 'is', 'fi', 'fr', 'gb', 'ie', 'is', 'no'];    
+    const array1 = ['ar', 'au', 'be', 'ca', 'es', 'fi', 'fr', 'gb', 'ie', 'is', 'fi', 'fr', 'gb', 'ie', 'is', 'no'];    
     $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
 	$("#topcontent-ar").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
 	    $("#topcontent-ar").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-ar").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/auall.json", function(result){
+	$("#topcontent-au").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-au").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-au").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/beall.json", function(result){
 	$("#topcontent-be").append('<div class="list-group">');
