@@ -447,6 +447,119 @@ send to Damegender, for example, with a github issue. Thanks in advance.</p>
       <link>https://pypi.org/project/damegender/0.4.4/</link>
       <pubDate>2022-03-14</pubDate>
     </item>
-    
+
+    <item>
+      <title>v0.4.5</title>
+      <description>
+	<p>Dumping names and surnames for all countries from Wikidata.
+surnames.py and surnamesincountries.py has been updated to give
+support to Wikidata.</p>
+
+        <p>For each country, we are choosing official statistics, but if 
+there not official statistics from now we are allowing to the users the
+dataset provided by wikidata. The user will receive a messsaga about
+it, due to that Wikidata could be giving very few names in some
+countries, so the quality is worst with Wikidata.</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.5/</guid>
+      <link>https://pypi.org/project/damegender/0.4.5/</link>
+      <pubDate>2022-04-12</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<p>Added the 58 most popular italian names (29 males and 29 females)
+retrieved from istat (the italian statistics office).</p>
+
+        <p>In the goal to make very easy replicate the building of the dataset,
+we are starting to rewrite all scripts about process orig files
+from official statistics from states to damegender csv files.
+As soon as possible the only command will be orig2.py simplifying
+the processing. Some datasets has been updated in the process.</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.6/</guid>
+      <link>https://pypi.org/project/damegender/0.4.6/</link>
+      <pubDate>2022-07-26</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<p>The method pretty_gg_list has been rewritten allowing some combination
+of csv or json files as arguments. This will be very useful for a
+Damegender non dependent of Lucia&Helena dataset. So, very good
+datasets saved in files/names/names_tests will can be used for check
+benchmarks of accuracies, precision, f1score, recall, ...</p>
+
+        <p>With identical goal in mind, many methods has been added to
+dame_statistics.py respecting the jargon math (true_negative,
+false_negative, false_positive, true_positive). Remember that
+there are many datasets stored in files/names/names_tests and tests
+are welcome!</p>
+
+        <p>More countries has been added to orig2.py</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.7/</guid>
+      <link>https://pypi.org/project/damegender/0.4.7/</link>
+      <pubDate>2022-10-17</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<p>Bug fixes in accuracy.py</p>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.4.8/</guid>
+      <link>https://pypi.org/project/damegender/0.4.8/</link>
+      <pubDate>2022-10-29</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<ul>
+	  <li>accuracy.py: bug fixes</li>
+	  <li>main.py: adding --force_whitespaces</li>
+	  <li>csv2gender.py: adding --force_whitespaces</li>
+	  <li>adding Argentina dataset</li>
+	  <li>downloadjson.py: adding --outjson</li>
+	  <li>downloadjson.py: adding --name_position</li>
+	  <li>get-wikidata-names.py: adding --outcsv argument</li>
+	  <li>get-wikidata-surnames.py: adding --outcsv argument</li>
+	  <li>mergeinterfiles.py: adding --malefemale_onlygender argument</li>
+	  <li>nameincountries.py: adding message about dataset used</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.5.0/</guid>
+      <link>https://pypi.org/project/damegender/0.5.0/</link>
+      <pubDate>2022-11-24</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<ul>
+	  <li>accuracy.py: bug fixes</li>
+	  <li>main.py: adding --force_whitespaces</li>
+	  <li>csv2gender.py: adding --force_whitespaces</li>
+	  <li>adding Argentina dataset</li>
+	  <li>downloadjson.py: adding --outjson</li>
+	  <li>downloadjson.py: adding --name_position</li>
+	  <li>get-wikidata-names.py: adding --outcsv argument</li>
+	  <li>get-wikidata-surnames.py: adding --outcsv argument</li>
+	  <li>mergeinterfiles.py: adding --malefemale_onlygender argument</li>
+	  <li>nameincountries.py: adding message about dataset used</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.5.1/</guid>
+      <link>https://pypi.org/project/damegender/0.5.1/</link>
+      <pubDate>2022-12-29</pubDate>
+    </item>
+
+    <item>
+      <description>
+	<p>Deploying top names by country in the website (https://damegender.davidam.com/top.html)</p>
+      </description>
+      <guid>https://damegender.davidam.com/top.html</guid>
+      <link>https://damegender.davidam.com/top.html</link>
+      <pubDate>2023-01-06</pubDate>
+    </item>
+
   </channel>
 </rss>
