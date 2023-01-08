@@ -46,6 +46,12 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#ca"><img src="img/flags/ca.svg" alt="Canada" height="15px"/></a>
           </li>
+          <!-- <li class="nav-item mx-0 mx-lg-1"> -->
+          <!--   <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#ch"><img src="img/flags/ch.svg" alt="Switzerland" height="15px"/></a> -->
+          <!-- </li>	   -->
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#cl"><img src="img/flags/cl.svg" alt="Chile" height="15px"/></a>
+          </li>	  
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#de"><img src="img/flags/de.svg" alt="Germany" height="15px"/></a>
           </li>
@@ -217,6 +223,46 @@
 
       <div class="container">
 	<div id="topcontent-ca"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="ch">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Switzerland</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-ch"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="cl">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Chile</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-cl"></div>
       </div>
     </div>
   </section>
@@ -653,7 +699,6 @@
   <script src="js/freelancer.min.js"></script>
 
   <script>
-    const array1 = ['ar', 'au', 'be', 'ca', 'es', 'fi', 'fr', 'gb', 'ie', 'is', 'fi', 'fr', 'gb', 'ie', 'is', 'no'];    
     $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
 	$("#topcontent-ar").append('<div class="list-group">');
 	for (var i = 0; i < 10; i++) {
@@ -681,6 +726,20 @@
 	    $("#topcontent-ca").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
 	}
 	$("#topcontent-ca").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/chall.json", function(result){
+	$("#topcontent-ch").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-ch").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-ch").append('</div>');	
+    });
+    $.getJSON("https://damegender.davidam.com/names/top/clall.json", function(result){
+	$("#topcontent-cl").append('<div class="list-group">');
+	for (var i = 0; i < 10; i++) {
+	    $("#topcontent-cl").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	}
+	$("#topcontent-cl").append('</div>');	
     });
     $.getJSON("https://damegender.davidam.com/names/top/deall.json", function(result){
 	$("#topcontent-de").append('<div class="list-group">');
