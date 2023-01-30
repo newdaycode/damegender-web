@@ -554,12 +554,18 @@ are welcome!</p>
 
     <item>
       <description>
-	<p>Deploying top names by country in the website (https://damegender.davidam.com/top.html)</p>
+	<ul>
+          <li>Adding Chile: 7024 females, 5433 males</li>
+	  <li>top.py: adding --outjson giving this wonderful feature: to export top names to websites</li>
+	  <li>sh/languages: adding arabic.sh, german.sh and portuguese.sh</li>
+	  <li>files/names/names_tests: adding wta-players.csv, names_leagues.csv</li>
+	  <li>Luz has been reviewing that each method has a comment explaining the method </li>
+	</ul>
       </description>
-      <guid>https://damegender.davidam.com/top.html</guid>
-      <link>https://damegender.davidam.com/top.html</link>
-      <pubDate>2023-01-06</pubDate>
-    </item>
+      <guid>https://pypi.org/project/damegender/0.5.2/</guid>
+      <link>https://pypi.org/project/damegender/0.5.2/</link>
+      <pubDate>2023-01-24</pubDate>
+    </item>    
 
   </channel>
 </rss>
