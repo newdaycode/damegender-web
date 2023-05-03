@@ -2822,6 +2822,39 @@ fieldset:disabled a.btn {
   width: 100%;
 }
 
+.text-programming {
+  display: none;
+}
+
+.programming-languages-content {
+  display: none;
+}
+
+.btn-gcc {
+  display: none;
+}
+.btn-python {
+  display: none;
+}
+.btn-ruby {
+  display: none;
+}
+.btn-tcl {
+  display: none;
+}
+.btn-r {
+  display: none;
+}
+.btn-bash {
+  display: none;
+}
+.btn-perl {
+  display: none;
+}
+.btn-emacs {
+  display: none;
+}
+
 .btn-block + .btn-block {
   margin-top: 0.5rem;
 }
