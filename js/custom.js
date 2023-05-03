@@ -23,6 +23,31 @@
   for the JavaScript code in this page.  
 */
 
+function allLanguagesHide() {
+    $('.programming-languages-content').show();    
+    $('.gcc').hide();
+    $('.python').hide();
+    $('.ruby').hide();    
+    $('.r').hide();    
+    $('.bash').hide();
+    $('.perl').hide();
+    $('.emacs').hide();
+    $('.tcl').hide();    
+    
+}
+
+// function buttonsHide() {
+//     $('.btn-gcc').hide();    
+//     $('.btn-python').hide();
+//     $('.btn-bash').hide();      
+//     $('.btn-r').hide();
+//     $('.btn-ruby').hide();
+//     $('.btn-tcltk').hide();
+//     $('.btn-perl').hide();
+//     $('.btn-perl').hide();
+//     $('.btn-emacs').hide();
+// }
+
 var logos = [
     "img/logos/davidam.png",
     "img/logos/1024px-Caravaggio_-_Medusa_-_Google_Art_Project.jpg",
@@ -58,24 +83,126 @@ document.getElementById('logo').src=logos[x];
 
 $('.btn-free-software').click(function() {
     $('.free-software').show();
-    $('.most-used-names').hide();    
+    $('.programming').hide();    
+    $('.most-used-names').hide();
+    $('.programming-languages-content').hide();    
+
+    $('.btn-gcc').hide();    
+    $('.btn-python').hide();
+    $('.btn-ruby').hide();    
+    $('.btn-r').hide();
+    $('.btn-bash').hide();      
+    $('.btn-perl').hide();
+    $('.btn-tcl').hide();
+    $('.btn-emacs').hide();
+});
+
+$('.btn-programming').click(function() {
+    $('.free-software').hide();
+    $('.programming').show();
+    $('.most-used-names').hide();
+    $('.gnu').hide();
+    $('.kernel').hide();      
+    $('.debian').hide();
+    $('.btn-gcc').show();    
+    $('.btn-python').show();
+    $('.btn-bash').show();      
+    $('.btn-r').show();
+    $('.btn-ruby').show();
+    $('.btn-perl').show();
+    $('.btn-tcl').show();    
+    $('.btn-emacs').show();    
+});
+
+$('.btn-gcc').click(function() {
+    allLanguagesHide();
+    $('.gcc').show();
+});
+
+$('.btn-r').click(function() {
+    allLanguagesHide();    
+    $('.r').show();    
+});
+
+$('.btn-bash').click(function() {
+    allLanguagesHide();
+    $('.bash').show();    
+});
+
+
+$('.btn-python').click(function() {
+    allLanguagesHide();
+    $('.python').show();
+});
+
+$('.btn-ruby').click(function() {
+    allLanguagesHide();
+    $('.ruby').show();
+});
+
+$('.btn-bash').click(function() {
+    allLanguagesHide();
+    $('.bash').show();
+});
+
+$('.btn-perl').click(function() {
+    allLanguagesHide();
+    $('.perl').show();
+});
+
+$('.btn-emacs').click(function() {
+    allLanguagesHide();
+    $('.emacs').show();
+});
+
+$('.btn-tcl').click(function() {
+    allLanguagesHide();
+    $('.tcl').show();
 });
 
 $('.btn-debian').click(function() {
     $('.debian').show();
     $('.gnu').hide();
     $('.kernel').hide();      
+    $('.btn-gcc').hide();    
+    $('.btn-python').hide();
+    $('.btn-bash').hide();      
+    $('.btn-r').hide();
+    $('.btn-ruby').hide();
+    $('.btn-tcl').hide();
+    $('.btn-perl').hide();
+    $('.btn-emacs').hide();    
+    
+
 });
 
 $('.btn-gnu').click(function() {
     $('.debian').hide();
     $('.gnu').show();
-    $('.kernel').hide();      
+    $('.kernel').hide();
+    $('.btn-gcc').hide();    
+    $('.btn-python').hide();
+    $('.btn-bash').hide();      
+    $('.btn-r').hide();
+    $('.btn-ruby').hide();
+    $('.btn-tcl').hide();
+    $('.btn-perl').hide();
+    $('.btn-emacs').hide();        
 });
+
 $('.btn-kernel').click(function() {
     $('.debian').hide();
     $('.gnu').hide();
     $('.kernel').show();
+
+    $('.btn-gcc').hide();    
+    $('.btn-python').hide();
+    $('.btn-bash').hide();      
+    $('.btn-r').hide();
+    $('.btn-ruby').hide();
+    $('.btn-tcl').hide();
+    $('.btn-perl').hide();
+    $('.btn-emacs').hide();        
 });
 
 $('.btn-most-used-names').click(function() {
