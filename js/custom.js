@@ -73,7 +73,8 @@ var logos = [
     "img/logos/heteropython.png",    
     "img/logos/Marie_Curie.jpg",
     "img/logos/Irene_Montero_2020.jpg",
-    "img/logos/korocastellano.jpg",    
+    "img/logos/korocastellano.jpg",
+    "img/logos/Catherine_DIgnazio.jpg",    
 ];
 
 var size = logos.length;
