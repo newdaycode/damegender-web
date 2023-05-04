@@ -32,7 +32,8 @@ function allLanguagesHide() {
     $('.bash').hide();
     $('.perl').hide();
     $('.emacs').hide();
-    $('.tcl').hide();    
+    $('.tcl').hide();
+    $('.js').hide();        
     
 }
 
@@ -96,7 +97,9 @@ $('.btn-free-software').click(function() {
     $('.btn-perl').hide();
     $('.btn-tcl').hide();
     $('.btn-emacs').hide();
+    $('.btn-js').hide();    
 });
+
 
 $('.btn-programming').click(function() {
     $('.free-software').hide();
@@ -111,7 +114,8 @@ $('.btn-programming').click(function() {
     $('.btn-r').show();
     $('.btn-ruby').show();
     $('.btn-perl').show();
-    $('.btn-tcl').show();    
+    $('.btn-tcl').show();
+    $('.btn-js').show();        
     $('.btn-emacs').show();    
 });
 
@@ -161,6 +165,11 @@ $('.btn-tcl').click(function() {
     $('.tcl').show();
 });
 
+$('.btn-js').click(function() {
+    allLanguagesHide();
+    $('.js').show();
+});
+
 $('.btn-debian').click(function() {
     $('.debian').show();
     $('.gnu').hide();
@@ -172,7 +181,8 @@ $('.btn-debian').click(function() {
     $('.btn-ruby').hide();
     $('.btn-tcl').hide();
     $('.btn-perl').hide();
-    $('.btn-emacs').hide();    
+    $('.btn-emacs').hide();
+    $('.btn-js').hide();     
     
 
 });
@@ -188,7 +198,8 @@ $('.btn-gnu').click(function() {
     $('.btn-ruby').hide();
     $('.btn-tcl').hide();
     $('.btn-perl').hide();
-    $('.btn-emacs').hide();        
+    $('.btn-emacs').hide();
+    $('.btn-js').hide();            
 });
 
 $('.btn-kernel').click(function() {
@@ -203,7 +214,8 @@ $('.btn-kernel').click(function() {
     $('.btn-ruby').hide();
     $('.btn-tcl').hide();
     $('.btn-perl').hide();
-    $('.btn-emacs').hide();        
+    $('.btn-emacs').hide();
+    $('.btn-js').hide();     
 });
 
 $('.btn-most-used-names').click(function() {
