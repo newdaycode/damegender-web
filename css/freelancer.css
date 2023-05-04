@@ -2848,6 +2848,9 @@ fieldset:disabled a.btn {
 .btn-bash {
   display: none;
 }
+.btn-js {
+  display: none;
+}
 .btn-perl {
   display: none;
 }
