@@ -575,5 +575,30 @@ are welcome!</p>
       <link>https://damegender.davidam.com/#stats</link>
       <pubDate>2023-05-05</pubDate>
     </item>
+
+    <item>
+      <description>
+	<p>New script!</p>
+	<ul>
+	  <li>checkcsv.py: to check possible problems in a csv file, such as, empty rows, initials, or emails</li>
+	</ul>
+  
+	<p>The accuracy average of INTER dataset continues augmenting! Now is 0.92. More about it in https://easychair.org/publications/preprint/Klv8</p>
+
+	<p>Brazil is another open data country!</p>
+	<ul>
+	  <li>[X] dame_brazilapi.py: has been implemented</li>
+	  <li>[X] test_dame_brazilapi.py: has been implemented</li>
+	  <li>[X] api2gender.py: updated</li>
+	  <li>[X] downloadjson.py: updated</li>
+	  <li>[X] Brazil: 1322 males, 1539 females. We want download more names in a near future</li>
+	  <li>[X] downloadcsv.py: has been created this script to download Brazil, but it will be replaced by source code in orig2.py in a near future.</li>
+	</ul>
+      </description>
+      <guid>https://pypi.org/project/damegender/0.5.3/</guid>
+      <link>https://pypi.org/project/damegender/0.5.3/</link>
+      <pubDate>2023-05-12</pubDate>
+    </item>
+
   </channel>
 </rss>
