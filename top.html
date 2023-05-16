@@ -52,6 +52,9 @@
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#be"><img src="img/flags/be.svg" alt="Belgium" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#br"><img src="img/flags/br.svg" alt="Brazil" height="15px"/></a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-1 rounded js-scroll-trigger" href="#ca"><img src="img/flags/ca.svg" alt="Canada" height="15px"/></a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -211,6 +214,26 @@
 
       <div class="container">
 	<div id="topcontent-be"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Most Used Names Section -->
+  <section class="page-section" id="br">  
+    <div class="container">
+
+      <!-- Statistics Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-black">Most Used Names in Brazil (<a href="https://raw.githubusercontent.com/davidam/damegender/master/src/damegender/files/names/names_br/brall.csv">CSV</a>)</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="container">
+	<div id="topcontent-br"></div>
       </div>
     </div>
   </section>
@@ -707,167 +730,18 @@
   <script src="js/freelancer.min.js"></script>
 
   <script>
-    $.getJSON("https://damegender.davidam.com/names/top/arall.json", function(result){
-	$("#topcontent-ar").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-ar").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-ar").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/auall.json", function(result){
-	$("#topcontent-au").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-au").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-au").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/beall.json", function(result){
-	$("#topcontent-be").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-be").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-be").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/caall.json", function(result){
-	$("#topcontent-ca").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-ca").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-ca").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/chall.json", function(result){
-	$("#topcontent-ch").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-ch").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-ch").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/clall.json", function(result){
-	$("#topcontent-cl").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-cl").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-cl").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/deall.json", function(result){
-	$("#topcontent-de").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-de").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-de").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/dkall.json", function(result){
-	$("#topcontent-dk").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-dk").append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-dk").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/esall.json", function(result){
-	$("#topcontent-es").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-es").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-es").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/fiall.json", function(result){
-	$("#topcontent-fi").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-fi").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-fi").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/frall.json", function(result){
-	$("#topcontent-fr").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-fr").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-fr").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/gball.json", function(result){
-	$("#topcontent-gb").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-gb").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-gb").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/ieall.json", function(result){
-	$("#topcontent-ie").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-ie").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-ie").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/interall.json", function(result){
-	$("#topcontent-inter").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-inter").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-inter").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/isall.json", function(result){
-	$("#topcontent-is").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-is").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-is").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/noall.json", function(result){
-	$("#topcontent-no").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-no").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-no").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/nzall.json", function(result){
-	$("#topcontent-nz").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-nz").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-nz").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/mxall.json", function(result){
-	$("#topcontent-mx").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-mx").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-mx").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/ruall.json", function(result){
-	$("#topcontent-ru").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-ru").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-ru").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/seall.json", function(result){
-	$("#topcontent-se").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-se").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-se").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/siall.json", function(result){
-	$("#topcontent-si").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-si").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-si").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/usall.json", function(result){
-	$("#topcontent-us").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-us").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-us").append('</div>');	
-    });
-    $.getJSON("https://damegender.davidam.com/names/top/uyall.json", function(result){
-	$("#topcontent-uy").append('<div class="list-group">');
-	for (var i = 0; i < 10; i++) {
-	    $("#topcontent-uy").append('<a href="#" class="list-group-item"><p class="list-group-item-heading">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
-	}
-	$("#topcontent-uy").append('</div>');	
-    });
+    let iterable = ["ar", "au", "be", "ca", "ch", "cl", "de", "dk", "es", "fi", "fr", "gb", "ie", "inter", "is", "no", "nz", "mx", "ru", "se", "si", "us", "uy"];
+
+    for (let value of iterable) {
+	$.getJSON("https://damegender.davidam.com/names/top/"+ value +"all.json", function(result){
+	    $("#topcontent-" + value).append('<div class="list-group">');
+	    for (var i = 0; i < 10; i++) {
+		$("#topcontent-" + value).append('<a href="#" class="list-group-item"><p class="list-group-item-heading text-uppercase text-black">' + result[i].position + ') ' + result[i].name + '<span class="badge">' + result[i].count + '</span></p></a>');
+	    }
+	    $("#topcontent-" + value).append('</div>');	
+	});
+    }
+
   </script>
   
 </body>
