@@ -470,13 +470,14 @@
       <div class="knowledge-content">
 	<div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light amazon" href="https://www.amazon.com/">
-	    Amazon
+	    Amazon Best Seller
 	  <img src="img/amazon_best_sellers.png" class="img-fluid" alt="Amazon Best Sellers by Gender" />
 	  <br />
 	  <pre>Try yourself:</pre>
-	  <pre>python3 csv2gender.py https://gcc.gnu.org/git/gcc.git</pre>
-	  <pre>--country='inter' --directory="tmp/clonegcc" --show=all --verbose ></pre>
-	  <pre>files/logs/git2gendergcc-$(date "+%Y-%m-%d-%H").txt</pre>	  
+	  <pre>python3 csv2gender.py files/names/names_tests/amazon-bestsellers-with-categories.inter.csv</pre>
+	  <pre>--first_name_position=1 --dataset=inter</pre>
+	  <pre>--outcsv=files/names/names_tests/amazon-bestsellers-with-categories.firstnamestrict.inter.csv</pre>
+	  <pre>--delimiter_csv=";" --guess_with_first_name_strict </pre>
           </a>				 
 	</div>
 	<div class="text-center mt-4">
