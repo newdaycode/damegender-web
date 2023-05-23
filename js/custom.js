@@ -18,36 +18,79 @@
   section 4, provided you include this license notice and a URL 
   through which recipients can access the Corresponding Source. 
   
-  
   @licend  The above is the entire license notice 
   for the JavaScript code in this page.  
 */
 
 function allLanguagesHide() {
-    $('.programming-languages-content').show();    
+    $('.programming-languages-content').show();
     $('.gcc').hide();
     $('.python').hide();
-    $('.ruby').hide();    
-    $('.r').hide();    
+    $('.ruby').hide();
+    $('.r').hide();
     $('.bash').hide();
     $('.perl').hide();
     $('.emacs').hide();
     $('.tcl').hide();
-    $('.js').hide();        
-    
+    $('.js').hide();    
 }
 
-// function buttonsHide() {
-//     $('.btn-gcc').hide();    
-//     $('.btn-python').hide();
-//     $('.btn-bash').hide();      
-//     $('.btn-r').hide();
-//     $('.btn-ruby').hide();
-//     $('.btn-tcltk').hide();
-//     $('.btn-perl').hide();
-//     $('.btn-perl').hide();
-//     $('.btn-emacs').hide();
-// }
+function allBtn(toggle) {
+    if (toggle == 'show') {
+	$('.btn-debian').show();
+	$('.btn-gnu').show();
+	$('.btn-kernel').show(); 
+	$('.btn-gcc').show();
+	$('.btn-python').show();
+	$('.btn-bash').show(); 
+	$('.btn-r').show();
+	$('.btn-ruby').show();
+	$('.btn-perl').show();
+	$('.btn-tcl').show();
+	$('.btn-js').show();
+	$('.btn-emacs').show();
+	$('.btn-gutenberg').show();
+	$('.btn-amazon').show();
+	$('.btn-scientists-wikipedia').show();
+    }
+
+    if (toggle == 'hide') {
+	$('.btn-debian').hide();
+	$('.btn-gnu').hide();
+	$('.btn-kernel').hide();
+	$('.btn-gcc').hide();
+	$('.btn-python').hide();
+	$('.btn-bash').hide(); 
+	$('.btn-r').hide();
+	$('.btn-ruby').hide();
+	$('.btn-perl').hide();
+	$('.btn-tcl').hide();
+	$('.btn-js').hide();
+	$('.btn-emacs').hide();
+	$('.btn-gutenberg').hide();
+	$('.btn-amazon').hide();
+	$('.btn-scientists-wikipedia').hide();
+    }
+}
+    
+function allKnowledgeHide() {
+    $('.knowledge-content').hide();
+    $('.gutenberg').hide();
+    $('.amazon').hide();
+    $('.imdb').hide();
+}
+
+function buttonsProgrammingShow() {
+    $('.btn-gcc').show();
+    $('.btn-python').show();
+    $('.btn-bash').show();
+    $('.btn-r').show();
+    $('.btn-ruby').show();
+    $('.btn-tcltk').show();
+    $('.btn-perl').show();
+    $('.btn-perl').show();
+    $('.btn-emacs').show();
+}
 
 var logos = [
     "img/logos/davidam.png",
@@ -85,19 +128,15 @@ document.getElementById('logo').src=logos[x];
 
 $('.btn-free-software').click(function() {
     $('.free-software').show();
-    $('.programming').hide();    
+    $('.free-software-content').show();
+    $('.programming').hide();
     $('.most-used-names').hide();
-    $('.programming-languages-content').hide();    
+    $('.programming-languages-content').hide();
+    allBtn('hide');
+    $('.btn-debian').show();
+    $('.btn-gnu').show();
+    $('.btn-kernel').show(); 
 
-    $('.btn-gcc').hide();    
-    $('.btn-python').hide();
-    $('.btn-ruby').hide();    
-    $('.btn-r').hide();
-    $('.btn-bash').hide();      
-    $('.btn-perl').hide();
-    $('.btn-tcl').hide();
-    $('.btn-emacs').hide();
-    $('.btn-js').hide();    
 });
 
 
@@ -106,17 +145,10 @@ $('.btn-programming').click(function() {
     $('.programming').show();
     $('.most-used-names').hide();
     $('.gnu').hide();
-    $('.kernel').hide();      
+    $('.kernel').hide();
     $('.debian').hide();
-    $('.btn-gcc').show();    
-    $('.btn-python').show();
-    $('.btn-bash').show();      
-    $('.btn-r').show();
-    $('.btn-ruby').show();
-    $('.btn-perl').show();
-    $('.btn-tcl').show();
-    $('.btn-js').show();        
-    $('.btn-emacs').show();    
+    allBtn('hide');
+    buttonsProgrammingShow();
 });
 
 $('.btn-gcc').click(function() {
@@ -125,8 +157,8 @@ $('.btn-gcc').click(function() {
 });
 
 $('.btn-r').click(function() {
-    allLanguagesHide();    
-    $('.r').show();    
+    allLanguagesHide();
+    $('.r').show();
 });
 
 $('.btn-bash').click(function() {
@@ -173,53 +205,62 @@ $('.btn-js').click(function() {
 $('.btn-debian').click(function() {
     $('.debian').show();
     $('.gnu').hide();
-    $('.kernel').hide();      
-    $('.btn-gcc').hide();    
-    $('.btn-python').hide();
-    $('.btn-bash').hide();      
-    $('.btn-r').hide();
-    $('.btn-ruby').hide();
-    $('.btn-tcl').hide();
-    $('.btn-perl').hide();
-    $('.btn-emacs').hide();
-    $('.btn-js').hide();     
-    
-
+    $('.kernel').hide();
+    allBtn('hide');    
+    $('.btn-kernel').show();
+    $('.btn-debian').show();
+    $('.btn-gnu').show();
 });
 
 $('.btn-gnu').click(function() {
     $('.debian').hide();
     $('.gnu').show();
     $('.kernel').hide();
-    $('.btn-gcc').hide();    
-    $('.btn-python').hide();
-    $('.btn-bash').hide();      
-    $('.btn-r').hide();
-    $('.btn-ruby').hide();
-    $('.btn-tcl').hide();
-    $('.btn-perl').hide();
-    $('.btn-emacs').hide();
-    $('.btn-js').hide();            
+    allBtn('hide');
+    $('.btn-kernel').show();
+    $('.btn-debian').show();
+    $('.btn-gnu').show();
 });
 
 $('.btn-kernel').click(function() {
     $('.debian').hide();
     $('.gnu').hide();
     $('.kernel').show();
-
-    $('.btn-gcc').hide();    
-    $('.btn-python').hide();
-    $('.btn-bash').hide();      
-    $('.btn-r').hide();
-    $('.btn-ruby').hide();
-    $('.btn-tcl').hide();
-    $('.btn-perl').hide();
-    $('.btn-emacs').hide();
-    $('.btn-js').hide();     
+    allBtn('hide');
+    $('.btn-kernel').show();
+    $('.btn-debian').show();
+    $('.btn-gnu').show();
 });
 
 $('.btn-most-used-names').click(function() {
     $('.most-used-names').show();
     $('.free-software').hide();
-    $('.free-software-content').hide();    
+    $('.free-software-content').hide();
+    $('.knowledge').hide();
+    $('.knowledge-content').hide();
+});
+
+$('.btn-knowledge').click(function() {
+    $('.knowledge').show();
+    $('.knowledge-content').show();    
+    $('.free-software').hide();
+    $('.free-software-content').hide();
+    $('.programming-languages').hide();    
+    $('.programming-languages-content').hide();
+    allBtn('hide');
+    $('.btn-gutenberg').show();
+    $('.btn-amazon').show();
+//    $('.btn-scientists-wikipedia').show();    
+});
+
+$('.btn-gutenberg').click(function() {
+    $('.gutenberg').show();
+});
+
+$('.btn-amazon').click(function() {
+    $('.amazon').show();
+});
+
+$('.btn-imdb').click(function() {
+    $('.imdb').show();
 });
