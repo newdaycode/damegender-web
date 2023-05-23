@@ -2830,6 +2830,18 @@ fieldset:disabled a.btn {
   display: none;
 }
 
+.btn-imdb {
+  display: none;
+}
+
+.btn-amazon {
+  display: none;
+}
+
+.btn-gutenberg {
+  display: none;
+}
+
 .btn-gcc {
   display: none;
 }
@@ -9910,4 +9922,8 @@ form .row:first-child .floating-label-form-group {
   height: 36px;
   background: url("img/search-indicator-magnifying-glass.svg") center center no-repeat;
   position: absolute;
+}
+
+.knowledge {
+  display: none;
 }
