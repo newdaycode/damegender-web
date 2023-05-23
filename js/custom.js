@@ -51,6 +51,7 @@ function allBtn(toggle) {
 	$('.btn-emacs').show();
 	$('.btn-gutenberg').show();
 	$('.btn-amazon').show();
+	$('.btn-imdb').show();	
 	$('.btn-scientists-wikipedia').show();
     }
 
@@ -69,6 +70,7 @@ function allBtn(toggle) {
 	$('.btn-emacs').hide();
 	$('.btn-gutenberg').hide();
 	$('.btn-amazon').hide();
+	$('.btn-imdb').hide();	
 	$('.btn-scientists-wikipedia').hide();
     }
 }
@@ -250,6 +252,7 @@ $('.btn-knowledge').click(function() {
     allBtn('hide');
     $('.btn-gutenberg').show();
     $('.btn-amazon').show();
+    $('.btn-imdb').show();    
 //    $('.btn-scientists-wikipedia').show();    
 });
 
